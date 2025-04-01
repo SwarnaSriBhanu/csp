@@ -16,13 +16,12 @@
         .navbar {
             background-color: #007BFF;
             overflow: hidden;
+            text-align: center;
         }
 
         .navbar a {
-            float: left;
-            display: block;
+            display: inline-block;
             color: white;
-            text-align: center;
             padding: 14px 20px;
             text-decoration: none;
             font-size: 18px;
@@ -30,7 +29,6 @@
 
         .navbar a:hover {
             background-color: #0056b3;
-            color: white;
         }
 
         /* Content Section */
@@ -39,59 +37,58 @@
             background-color: white;
             margin: 20px;
             border-radius: 8px;
+            text-align: center;
         }
 
-        /* Header - Increase the size of the heading "Abstract" */
+        /* Header */
         h1 {
             color: #333;
             font-size: 48px;
-            margin-bottom: 20px;
         }
 
-        /* Paragraph Style - Increase Font Size */
+        /* Paragraph Style */
         p {
-            font-size: 30px;
+            font-size: 24px;
             line-height: 1.6;
             color: #333;
         }
 
-        /* Custom Style for the Heading */
+        /* Custom Heading */
         .custom-heading {
-            font-size: 60px; /* Change the size here */
-            color: #ff6600;  /* Change the color here */
+            font-size: 60px;
+            color: #ff6600;
             text-align: center;
             margin-top: 40px;
         }
+
+        /* Banner Image */
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
     </style>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="abstract.html">Abstract</a>
-        <a href="Existed and Proposal System.html">Existed and Proposed System</a>
-        <a href="Survey Data.html">Survey Data</a>
-        <a href="Graphs.html">Graphs</a>
-        <a href="Survey Photos.html">Survey Photos</a>
-        <a href="Team Members.html">Team Members</a>
+        <a href="existed-and-proposed-system.html">Existed & Proposed System</a>
+        <a href="survey-data.html">Survey Data</a>
+        <a href="graphs.html">Graphs</a>
+        <a href="survey-photos.html">Survey Photos</a>
+        <a href="team-members.html">Team Members</a>
         <a href="conclusion.html">Conclusion</a>
     </div>
 
-    <!-- Placeholder for the Navbar -->
-    <div id="navbar-container"></div>
-    <!-- JavaScript to load navbar -->
-    <script>
-        fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar-container').innerHTML = data;
-        });
-    </script>
-
-    <!-- Custom Heading -->
-    <h1 class="custom-heading">FLORICULTURE</h1>
-
-    <div class="content">
-        <p>"FLORICULTURE" is the cultivation of flowers, plants, and foliage for ornamental purposes. It encompasses the production and management of flowering and foliage plants, including flowers grown for bouquets, cut flowers, floral arrangements, landscaping, and decorative purposes. Floriculture can range from small-scale hobbyist gardens to large commercial operations supplying flowers to local markets or international distribution. In addition to the aesthetic value, floriculture plays significant roles in various sectors such as agriculture, horticulture, and the floral industry. It contributes to the economy through the sale of flowers, ornamental plants, and related products like potpourri, essential oils, and herbal medicines. Moreover, it has cultural significance, often being used in ceremonies, celebrations, religious rituals, and as symbols of love, affection, or condolences.</p>
+    <!-- Content Section -->
+    <div class="header-container">
+        <div class="banner">
+            <img src="home.png" alt="Project Banner">
+        </div>
     </div>
 
 </body>
